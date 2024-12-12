@@ -1,0 +1,10 @@
+<h1>Welcome, <%= @user.name %></h1>
+
+<!-- Profile Information -->
+<p>Email: <%= @user.email %></p><br>
+<p>Name: <%= @user.name %></p><br>
+<p>Age: <%= @user.age %></p><br>
+<p>Contact: <%= @user.contact %></p><br>
+
+<!-- Logout Button -->
+<%= button_to 'Logout', logout_path, method: :delete, class: "btn btn-primary" %>
